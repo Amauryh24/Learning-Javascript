@@ -10,11 +10,5 @@
 // You will have time to focus on it later.
 
 (() => {
-  // your code here
-  let answer = prompt("Tu veux du gâteau ?");
-  if (answer == "oui") {
-    alert("bravo");
-  } else {
-    alert("du gâteau, ça ne se refuse pas !");
-  }
+    // your code here
 })();
