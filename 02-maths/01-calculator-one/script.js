@@ -10,21 +10,31 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to get the value of an input: document.getElementById("element-id").value
+  // to get the value of an input: document.getElementById("element-id").value
+  function operation(op) {
+    let opOne = document.getElementById("op-one").value;
+    let opTwo = document.getElementById("op-two").value;
+    result = eval(opOne + op + opTwo);
+    alert(result);
+  }
 
-    document.getElementById("addition").addEventListener("click", () => {
-        // perform an addition
-    });
+  document.getElementById("addition").addEventListener("click", () => {
+    // perform an addition
+    operation("+");
+  });
 
-    document.getElementById("substraction").addEventListener("click", () => {
-        // perform an substraction
-    });
+  document.getElementById("substraction").addEventListener("click", () => {
+    // perform an substraction
+    operation("-");
+  });
 
-    document.getElementById("multiplication").addEventListener("click", () => {
-        // perform an multiplication
-    });
+  document.getElementById("multiplication").addEventListener("click", () => {
+    // perform an multiplication
+    operation("*");
+  });
 
-    document.getElementById("division").addEventListener("click", () => {
-        // perform an division
-    });
+  document.getElementById("division").addEventListener("click", () => {
+    // perform an division
+    operation("/");
+  });
 })();
