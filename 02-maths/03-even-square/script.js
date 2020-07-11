@@ -10,7 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.getElementById("run").addEventListener("click", () => {
-        // your code here
-    });
+  document.getElementById("run").addEventListener("click", () => {
+    // your code here
+    for (let i = 1; i < 22; i++) {
+      if (i % 2 === 0) {
+        console.log(i * i);
+      }
+    }
+  });
 })();
