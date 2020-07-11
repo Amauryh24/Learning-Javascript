@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  randomColor = () => {
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    let rgb = "rgb(" + r + "," + g + "," + b + ")";
+    return rgb;
+  };
+
+  document.getElementById("run").addEventListener("click", () => {
+    document.body.style.backgroundColor = randomColor();
+  });
 })();
