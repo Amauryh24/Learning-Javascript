@@ -10,9 +10,21 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to get the value of an input: document.getElementById("element-id").value
+  // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", () => {
-        // your code here
-    });
+  document.getElementById("run").addEventListener("click", () => {
+    // your code here
+    let number = document.getElementById("number").value;
+    number = parseInt(number);
+
+    if (!isNaN(number)) {
+      let factorielle = 1;
+      for (let i = 0; i < number; i++) {
+        factorielle = factorielle * (i + 1);
+      }
+      alert("le factorielle de " + number + " est " + factorielle);
+    } else {
+      alert("veuillez entrez un entier uniquement");
+    }
+  });
 })();
