@@ -10,6 +10,18 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-    // your code here
+  // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+  // your code here
+  let date = new Date();
+  document.getElementById("target").innerText = date.toLocaleDateString(
+    "fr-BE",
+    {
+      weekday: "long",
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    }
+  );
 })();
