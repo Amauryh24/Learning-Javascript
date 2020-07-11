@@ -10,5 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  let confirmInfos = false;
+  while (confirmInfos == false) {
+    let age = prompt("Quel est ton âge ?");
+    let sexe = prompt("Quel est ton sexe ?");
+    let ville = prompt("Quelle est ta ville ?");
+    confirmInfos = confirm(age + ", " + sexe + ", " + ville);
+  }
 })();
