@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  document.getElementById("run").addEventListener("click", () => {
+    console.log("ok");
+    let avatar = {
+      lastname: "Amaury",
+      firstname: "Henrottay",
+      age: 29,
+      city: "Liège",
+      country: "Belgique",
+    };
+    console.log(avatar);
+  });
 })();
