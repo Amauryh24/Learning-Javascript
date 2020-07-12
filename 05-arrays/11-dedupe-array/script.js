@@ -10,22 +10,30 @@
 // You will have time to focus on it later.
 
 (() => {
-    const fruits = [
-        "cerise",
-        "durian",
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "fraise",
-        "durian",
-        "pêche",
-        "cerise",
-        "raisin",
-        "cerise",
-    ];
+  const fruits = [
+    "cerise",
+    "durian",
+    "pomme",
+    "poire",
+    "fraise",
+    "tomate",
+    "orange",
+    "mandarine",
+    "fraise",
+    "durian",
+    "pêche",
+    "cerise",
+    "raisin",
+    "cerise",
+  ];
 
-    // your code here
+  // your code here
+  document.getElementById("run").addEventListener("click", () => {
+    // let uniqueArray = fruits.filter((el, index) => {
+    //   console.log(el + " " + index);
+    //   return fruits.indexOf(el) === index;
+    // });
+    let uniqueArray = [...new Set(fruits)];
+    console.log(uniqueArray);
+  });
 })();
