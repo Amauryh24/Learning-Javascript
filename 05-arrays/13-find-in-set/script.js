@@ -10,17 +10,21 @@
 // You will have time to focus on it later.
 
 (() => {
-    const people = new Set([
-        "Nicolas",
-        "Anthony",
-        "Leny",
-        "Alexandre",
-        "Eric",
-        "Caroline",
-        "Esther",
-        "Simon",
-        "Lucas",
-    ]);
+  const people = new Set([
+    "Nicolas",
+    "Anthony",
+    "Leny",
+    "Alexandre",
+    "Eric",
+    "Caroline",
+    "Esther",
+    "Simon",
+    "Lucas",
+  ]);
 
-    // your code here
+  // your code here
+  document.getElementById("run").addEventListener("click", () => {
+    console.log("Nombre de personne dans le set: " + people.size);
+    console.log("Alexandre fait-il partie du set? " + people.has("Alexandre"));
+  });
 })();
