@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  let target = document.getElementById("target");
+  let table = document.createElement("table");
+  target.appendChild(table);
+  for (let i = 1; i <= 10; i++) {
+    let row = document.createElement("tr");
+    table.appendChild(row);
+    for (let j = 1; j <= 10; j++) {
+      let col = document.createElement("td");
+      col.innerText = `${i} * ${j} = ${i * j} `;
+      row.appendChild(col);
+    }
+  }
 })();
