@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  document.getElementById("run").addEventListener("click", () => {
+    let pass = document.getElementById("pass-one");
+    let passConfirm = document.getElementById("pass-two");
+
+    if (pass.value !== passConfirm.value) {
+      pass.style.borderColor = "red";
+      passConfirm.style.borderColor = "red";
+    } else {
+      pass.style.borderColor = "green";
+      passConfirm.style.borderColor = "green";
+    }
+  });
 })();
