@@ -10,5 +10,15 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  let image = document.getElementsByTagName("img")[0];
+  let dataHover = image.getAttribute("data-hover");
+  let src = image.getAttribute("src");
+
+  image.addEventListener("mouseover", (event) => {
+    image.setAttribute("src", dataHover);
+  });
+  image.addEventListener("mouseout", (event) => {
+    image.setAttribute("src", src);
+  });
 })();
