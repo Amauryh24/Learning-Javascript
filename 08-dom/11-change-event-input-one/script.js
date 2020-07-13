@@ -10,5 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  let pass = document.getElementById("pass-one");
+  pass.setAttribute("maxlength", 10);
+
+  pass.addEventListener("input", (event) => {
+    document.getElementById("counter").innerHTML =
+      event.target.value.length + "/10";
+  });
 })();
