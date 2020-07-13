@@ -10,5 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+
+  for (let i = 0; i < 5; i++) {
+    document.getElementsByClassName("target")[i].innerHTML = "owned";
+  }
 })();
