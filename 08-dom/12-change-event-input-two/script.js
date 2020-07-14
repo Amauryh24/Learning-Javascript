@@ -10,5 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  let pass = document.getElementById("pass-one");
+  let re = /[0-9]/g;
+
+  pass.addEventListener("input", (event) => {
+    let result = event.target.value.match(re);
+    if (result !== null) {
+      if (event.target.value.length > 7 && result.length > 1) {
+        console.log("ok");
+        document.getElementById("validity").innerText = "ok";
+      } else {
+        document.getElementById("validity").innerText = "Pas ok";
+      }
+    }
+  });
 })();
