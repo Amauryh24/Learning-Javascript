@@ -10,5 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  let slider = document.getElementById("slider");
+  let target = document.getElementById("target");
+  target.innerText = slider.value;
+
+  slider.oninput = (e) => {
+    target.innerText = e.target.value;
+  };
 })();
