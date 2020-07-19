@@ -1,2 +1,3 @@
 # Learning-Javascript
-Multiple exercice on Javascript
+
+Exercice on Javascript
