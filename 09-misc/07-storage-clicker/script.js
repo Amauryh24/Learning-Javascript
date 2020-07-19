@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  let target = document.getElementById("target");
+  count = 0;
+  window.addEventListener("load", () => {
+    count = localStorage.getItem("myCount");
+    target.innerText = count;
+  });
+  document.getElementById("increment").addEventListener("click", () => {
+    count++;
+    target.innerText = count;
+    localStorage.setItem("myCount", count);
+  });
 })();
